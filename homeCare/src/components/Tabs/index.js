@@ -1,4 +1,4 @@
-import React, {memo, useCallback} from 'react';
+import React, {memo} from 'react';
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 
 import styles from './styles';

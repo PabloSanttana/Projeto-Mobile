@@ -54,7 +54,6 @@ export default function index({title, stack = false, refresh}) {
         },
       })
       .then((response) => {
-        /*  console.log('refresh'); */
         var count = 0;
         count = response.data.countMessage + response.data.statusChange;
         if (count > 9) {
@@ -70,7 +69,6 @@ export default function index({title, stack = false, refresh}) {
   }, []);
 
   const handleClearNotification = useCallback(() => {
-    /*  console.log(cpf); */
     api
       .post(
         '/notificacao/paciente/clear',

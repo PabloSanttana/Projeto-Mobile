@@ -2,10 +2,10 @@ import React, {memo, useMemo} from 'react';
 import {View, Text} from 'react-native';
 import {ProgressCircle} from 'react-native-svg-charts';
 
-import {status} from '../../../constants';
 import styles from './styles';
 
 function index({value, color, state}) {
+  // captuar só numero que esta na string
   const percentagem = useMemo(() => value.replace(/\D/gim, '') / 100);
 
   return (

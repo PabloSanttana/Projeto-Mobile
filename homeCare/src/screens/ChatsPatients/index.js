@@ -45,12 +45,6 @@ export default function index() {
         return item.name.toLowerCase().includes(text.toLowerCase());
       });
     }
-
-    /* if (data.length === 0) {
-      setSearchFalid(true);
-    } else {
-      setSearchFalid(false);
-    } */
     setData(data);
   }
 

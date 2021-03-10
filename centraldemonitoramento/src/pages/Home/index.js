@@ -17,7 +17,7 @@ export default function Home() {
               className="text-secondary mt-2"
             >
               MonitoringCenter oferece assistência médica progressiva e
-              acessível, acessível no celular e online para todos
+              acessível, no celular e online para todos.
             </p>
             <Link
               to="/cadastro_paciente"

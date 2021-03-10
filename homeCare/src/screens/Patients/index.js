@@ -164,11 +164,6 @@ export default function index() {
           )}
           ListEmptyComponent={NotFound}
         />
-        {/* <TouchableOpacity
-          onPress={() => navigation.navigate('ClassificationPatients')}
-          style={styles.containerButton}>
-          <Text style={styles.buttonTitle}>Classificações dos pacientes</Text>
-        </TouchableOpacity> */}
         <ModalContainer active={isModalActive} setActive={setIsModalActive}>
           <Text style={styles.titleModal}>Classificações de risco</Text>
 

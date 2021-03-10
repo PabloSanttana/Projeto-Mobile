@@ -1,7 +1,6 @@
 import React, {memo} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 
-import {colors, status} from '../../constants';
 import styles from './styles';
 import ProgressCircle from './ProgressCircle';
 import LineChart from './LineChart';
@@ -16,7 +15,7 @@ function index({type, value, color, state, data}) {
         <LineChart value={value} color={color} state={state} data={data} />
       );
     } else if (type === 'PA') {
-      return <BarChart value={value} color={color} state={state} data={data} />;
+      return <BarChart state={state} data={data} />;
     }
   };
 

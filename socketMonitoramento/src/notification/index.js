@@ -74,8 +74,8 @@ async function pushNotification(
 
       var payload = {
         notification: {
-          title: `Paciente ${name} lhe mandou uma messagem`,
-          body: `${message}`,
+          title: `Módulo Cuidador Messagem`,
+          body: `Paciente ${name} \n message: ${message}`,
         },
       };
       if (fcmTokem && fcmTokem !== "") {

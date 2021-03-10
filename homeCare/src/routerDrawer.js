@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {
   createDrawerNavigator,
@@ -9,7 +9,6 @@ import {
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Drawer = createDrawerNavigator();
 
@@ -22,7 +21,6 @@ import ChatModulePatient from './screens/ChatModulePatient';
 /// configuração do estyle drawer
 import HeaderGaveta from './components/HeaderGaveta';
 import Logout from './components/Logout';
-import styles from './components/HeaderGaveta/styles';
 
 import {colors} from './constants';
 

@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 import logo from '../../assets/logo.png';
 import MaskCPF from '../../Utils/maskCPF';
 
-export default function index(props) {
+export default function index() {
   const user = useSelector((state) => state.userData);
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -30,9 +30,6 @@ export default function index(props) {
           </Text>
           {user.type === 'paciente' && (
             <>
-              {/*   <Text onPress={() => props.navigation.navigate('Teste')}>
-                tstes
-              </Text> */}
               <Text style={styles.label}>Idade</Text>
               <Text style={styles.text}>{user.idade}</Text>
               <Text style={styles.label}>Neurologista responsável</Text>

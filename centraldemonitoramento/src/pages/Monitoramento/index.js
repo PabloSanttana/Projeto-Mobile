@@ -29,17 +29,17 @@ export default function Monitoramento({ location }) {
 
   useEffect(() => {
     socket.on("BPM", (info) => {
-      console.log("BPM", info);
+      /* console.log("BPM", info); */
     });
     socket.on("PA", (info) => {
-      console.log("PA", info);
+      /*  console.log("PA", info); */
     });
     socket.on("SaO2", (info) => {
-      console.log("SaO2", info);
+      /* console.log("SaO2", info); */
     });
-    socket.on("message", (message) => {
+    /*  socket.on("message", (message) => {
       console.log(message);
-    });
+    }); */
   }, []);
 
   const [BPM, setBPM] = useState({ valor: 90, Status: "Baixa" });
@@ -112,7 +112,7 @@ export default function Monitoramento({ location }) {
       myVar = setInterval(handleonSubmitAutomatic, timer * 1000);
       setIntervalStatu({ id: myVar, active: true });
     } else {
-      console.log("Stop");
+      /*    console.log("Stop"); */
       clearInterval(intervalStatu.id);
       setIntervalStatu({ active: false });
     }

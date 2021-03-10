@@ -90,7 +90,7 @@ export default function Home() {
           />
         </div>
         <button type="submit" className="btn button">
-          Submit
+          Cadastrar
         </button>
       </form>
     </main>

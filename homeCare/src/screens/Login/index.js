@@ -51,6 +51,7 @@ export default function Home() {
         CRM,
         fcmToken,
       };
+      console.log(data);
       seTIsSpinner(true);
       api
         .post('login/paciente', data)

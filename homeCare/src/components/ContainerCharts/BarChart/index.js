@@ -5,7 +5,7 @@ import {View, Text} from 'react-native';
 import {status} from '../../../constants';
 import styles from './styles';
 
-export default function index({value, color, state, data}) {
+export default function index({state, data}) {
   /* console.log(data); */
   const label = [0, 20, 40, 60, 80, 100, 120, 150];
 

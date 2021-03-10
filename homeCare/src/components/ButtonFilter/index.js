@@ -1,9 +1,9 @@
-import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import React, {memo} from 'react';
+import {Text, TouchableOpacity} from 'react-native';
 
 import styles from './styles';
 
-export default function index({title, Active, handleFilter}) {
+function index({title, Active, handleFilter}) {
   function handleActiverFilter() {
     if (title === 'BPM') {
       handleFilter(true, false, false);
@@ -28,3 +28,4 @@ export default function index({title, Active, handleFilter}) {
     </TouchableOpacity>
   );
 }
+export default memo(index);

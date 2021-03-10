@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {View, Text, TextInput} from 'react-native';
 
 import styles from './styles';
 
-export default function index({
+function index({
   label,
   placeholder,
   value,
@@ -28,3 +28,4 @@ export default function index({
     </View>
   );
 }
+export default memo(index);

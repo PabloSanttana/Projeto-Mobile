@@ -12,7 +12,7 @@ import {
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useSelector} from 'react-redux';
 import io from 'socket.io-client';
-import {useRoute, useNavigation} from '@react-navigation/native';
+import {useRoute} from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
@@ -26,7 +26,6 @@ window.navigator.userAgent = 'react-native';
 const socket = io(localhost);
 
 export default function index() {
-  const navigation = useNavigation();
   const flatlistRef = useRef(null);
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
@@ -86,10 +85,6 @@ export default function index() {
     };
   }, []);
 
-  function teste(params) {
-    console.log('mudou');
-  }
-
   const handleSendMessage = useCallback(() => {
     if (message === '') return;
 
@@ -104,6 +99,7 @@ export default function index() {
       Keyboard.dismiss();
     });
   }, [message, CRM]);
+
   const NotFound = useCallback(() => {
     return (
       <View style={styles.notfoundContainer}>
@@ -111,8 +107,9 @@ export default function index() {
       </View>
     );
   }, []);
+
   return (
-    <SafeAreaView style={{flex: 1}} onLayout={teste}>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar
         barStyle="light-content"
         backgroundColor={colors.backgroundColorSecondary}

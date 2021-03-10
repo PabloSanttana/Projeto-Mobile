@@ -99,7 +99,7 @@ export default function index() {
       timerIdServiceBackground = BackgroundTimer.setInterval(() => {
         console.log('BackgroundTimer');
         handleConnetionActivePermanently();
-      }, 15000);
+      }, 10000);
     }
   }, []);
   const handleConnetionActivePermanently = useCallback(() => {
@@ -234,9 +234,6 @@ export default function index() {
     };
   }, []);
 
-  function teste(params) {
-    console.log('mudou');
-  }
   const handleModalIsactive = useCallback((config) => {
     if (config === 'info') {
       setModalType(1);
@@ -296,7 +293,7 @@ export default function index() {
   }, [modalType]);
 
   return (
-    <SafeAreaView onLayout={teste}>
+    <SafeAreaView>
       <StatusBar
         barStyle="light-content"
         backgroundColor={colors.backgroundColorSecondary}
