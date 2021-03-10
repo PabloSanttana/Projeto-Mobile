@@ -1,0 +1,23 @@
+.monitoramentocontainer {
+  background: rgb(103, 195, 243);
+  background: linear-gradient(
+    190deg,
+    rgba(103, 195, 243, 1) 0%,
+    rgba(90, 152, 242, 1) 100%
+  );
+  margin: 0 auto;
+  margin-top: 10vh;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.alerte-danger {
+  border: 2px solid red !important;
+  box-shadow: 0px 0px 5px red !important;
+}
+.alerte-alerte {
+  border: 2px solid #fbff00 !important;
+  box-shadow: 0px 0px 5px #fbff00 !important;
+}
+select {
+  margin-top: 10;
+}

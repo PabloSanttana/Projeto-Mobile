@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  font: 14px sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+}
+#root {
+  width: 100%;
+  min-width: 360px;
+}
+.App {
+  width: 100%;
+  max-width: 1300px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-nav .active {
+  color: #00416b;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
